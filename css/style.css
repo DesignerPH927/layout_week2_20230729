@@ -1,0 +1,381 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+/* --------------------------------------------- */
+
+
+/* layout start */
+
+.wrap {
+  background: #000;
+}
+
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+
+.nav { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  gap: 20.333px;
+}
+
+.nav li:nth-child(1),
+.nav li:nth-child(2),
+.nav li:nth-child(3) {
+  width: 306px;
+}
+.nav li:nth-child(4) {
+  width: 196px;
+  text-align: right;
+}
+
+.nav li a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #d1d1d1;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.header .headerImg {
+  width: 636px;
+  height: 848px;
+  padding: 36px 0px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  padding: 116px 0;
+}
+
+.title1, .title2 {
+  font-size: 64px;
+  line-height: 96px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.title3 {
+  font-size: 128px;
+  line-height: 192px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #00ffa3;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 12px 24px;
+  margin-left: auto;
+  border-radius: 32px;
+  gap: 4px;
+  text-transform: uppercase;
+}
+
+.introduction {
+  background-image: url(../img/introduction/background-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sectionWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.section-left {
+  padding: 80px 0px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.sectionLeft1 {
+  font-size: 64px;
+  line-height: 96px; 
+}
+
+.sectionLeft2 {
+  font-size: 24px;
+  line-height: 36px;
+  padding: 66px 0px;  
+}
+
+.sparkle-sm {
+  display: flex;  
+  gap: 16px;
+}
+
+.section-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0px;
+  gap: 24px;
+}
+
+
+.about-me {
+  background: #fff;
+}
+.aboutMeWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 134px;
+  padding: 160px 0px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 636px; 
+  gap: 24px;
+}
+.card1, .card2, .card3, .card4 {
+  width: 274px;  
+  padding: 16px;
+  text-transform: uppercase; 
+  border: 1px solid #e3e3e3; 
+  box-shadow: 5px 5px 15px #e3e3e3;
+  color: #15161d;
+  gap: 4px 0px;
+}
+
+.cardText1, .cardText2 {
+  font-size: 20px;
+  line-height: 30px;
+}
+.cardText3 {
+  font-size: 16px;
+  line-height: 24px;  
+}
+
+.aboutMeTitle {
+  width: 526px;
+  display: flex;
+  flex-direction: column;  
+  gap: 36px;
+  text-transform: uppercase;
+}
+.aboutMe {
+  font-size: 64px;
+  line-height: 96px;
+  color: #000;  
+}
+.aboutMeText {
+  font-size: 24px;
+  line-height: 36px;
+  color: #15161d;  
+}
+
+
+.contactWrap {  
+  background: linear-gradient(180deg,#050014,#01021E);
+}
+.cWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+.contactTextWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+  padding: 127px 0px;
+}
+
+.contactText {
+  font-size: 64px;
+  line-height: 96px;
+}
+.socialIconWrap {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+.socialIconWrap .socialIcon{
+  width: 162px;
+  height: 162px;
+  object-fit: cover;
+  object-position: center;
+  animation: moveIcon 1s infinite alternate;
+}
+@keyframes moveIcon {
+  100% {
+    filter: drop-shadow(0 0 16px #9094FF);
+  }
+}
+.socialIconWrap .socialIcon:hover {
+  animation: rotateIcon 3s infinite;
+}
+@keyframes rotateIcon {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.socialIconWrap .socialIcon:nth-child(1) {
+  filter: drop-shadow(0 4px 4px #000);
+}
+.socialIconWrap .socialIcon:nth-child(2),
+.socialIconWrap .socialIcon:nth-child(3){
+  filter: drop-shadow(4px 4px 8px #000);
+}
+
+
+.projectWrap {
+  padding: 160px 0px;
+  background: #fff;
+}
+
+.pWrap {
+  display: flex;
+  flex-direction: column;
+  align-items:end;
+  gap: 16px; 
+}
+.projectText {
+  width: 746px;
+  font-size: 64px;
+  line-height: 96px; 
+  text-transform: uppercase;
+}
+.projectPhotoDown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.projectRight {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.projectRightTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.projectRightTextWrap {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;  
+  gap: 76px;
+}
+.projectRightText {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #15161d;
+}
+.pRTBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 24px;
+  background: #000;
+  border-radius: 32px;
+}
+.pRText {
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+.projectRightDown {
+  display: flex;
+  gap: 24px;
+}
+
+.footer {
+  background: #000;
+  padding: 40px 312px;  
+}
+.footerText {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* layout end */
